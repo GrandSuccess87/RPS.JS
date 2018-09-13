@@ -10,6 +10,7 @@ var winsText = document.getElementById('wins-text')
 var lossesText = document.getElementById('losses-text')
 var tiesText = document.getElementById('ties-text')
 var resultText = document.getElementById('result-text')
+var consoleText = document.getElementById('console-text')
 // var userScore = document.getElementById('user-score')
 
 var computerChoices = ['r', 'p', 's']
@@ -72,6 +73,7 @@ document.onkeyup = function (event) {
     }
 
     directionsText.textContent = ' '
+    consoleText.textContent = ' '
     userChoiceText.textContent = 'User Guess: ' + userGuess
     // userScore.textContent = 'User Score: ' + wins
     compChoiceText.textContent = 'Computer Choice: ' + computerGuess
